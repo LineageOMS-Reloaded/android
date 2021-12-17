@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Get rid of Lineage repos -->
+    <remove-projext name="LineageOS/android" />
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <remove-project name="LineageOS/android_frameworks_native" />
+    <remove-project name="LineageOS/android_packages_apps_Contacts" />
+    <remove-project name="LineageOS/android_packages_apps_ContactsCommon" />
+    <remove-project name="LineageOS/android_packages_apps_Dialer" />
+    <remove-project name="LineageOS/android_packages_apps_ExactCalculator" />
+    <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+    <remove-project name="LineageOS/android_packages_apps_PhoneCommon" />
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
+    <remove-project name="LineageOS/android_system_sepolicy" />
+    <remove-project name="LineageOS/android_vendor_cm" />
+
+    <!-- Track our repos -->
+    <project path="frameworks/base" name="android_frameworks_base" remote="omsreload" />
+    <project path="frameworks/native" name="android_frameworks_native" remote="omsreload" />
+    <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="omsreload" />
+    <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="omsreload" />
+    <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="omsreload" />
+    <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="omsreload" />
+    <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="omsreload" />
+    <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="omsreload" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="omsreload" />
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="omsreload" />
+    <project path="vendor/cm" name="android_vendor_cm" remote="omsreload" />
+
+    <!-- Track ThemeInterfacer -->
+    <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+</manifest>

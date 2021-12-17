@@ -8,6 +8,9 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="omsreload"
+           fetch="https://github.com/LineageOMS-Reloaded" />
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
@@ -506,8 +509,6 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
 
   <include name="snippets/cm.xml" />
-
-  <!-- Substratum support -->
-  <include name="snippets/substratum.xml" />
+  <include name="snippets/omsreload.xml" />
 
 </manifest>
